@@ -1,0 +1,22 @@
+a = input('Ingrese numero de matriz')
+b = int(a)
+     
+matriz = []
+
+for i in range(b):
+    matriz.append([])
+    for j in range(b):
+        matriz[i].append(1)
+    print(matriz[i])
+
+print('-fin')
+
+for z in range(b):
+    print(matriz[z][z])
+
+print('fin')
+
+for m in range(b-1,-1,-1):
+    print('-> Fila '+str(m))
+    for n in range(b-1,-1,-1):
+        print(matriz[m][n])
